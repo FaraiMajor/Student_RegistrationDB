@@ -1,5 +1,7 @@
 # Student_RegistrationDB
 
+# Done by : Farai Mutukumira, Kristy Delacruz and Raja Awais Azhar
+
 ## Description
 
 Assignment:
