@@ -23,4 +23,4 @@ Assignment:
 </ul>
 
 ## ERD TABLE
-<img src"./erdDiagram.png" />
+![Screenshot](erdDiagram.png)
