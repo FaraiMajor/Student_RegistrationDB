@@ -1,0 +1,25 @@
+//INNER JOIN 2 tables
+
+SELECT * FROM student
+INNER JOIN registration ON student.student_id = registration.student_id;
+
+//INNER JOIN 3 tables
+
+SELECT * FROM student
+INNER JOIN registration ON student.student_id = registration.student_id
+INNER JOIN section ON registration.section_id = section.section_id;
+
+//INNER JOIN 4 tables
+
+SELECT * FROM student
+INNER JOIN registration ON student.student_id = registration.student_id
+INNER JOIN section ON registration.section_id = section.section_id
+INNER JOIN course ON section.course_id = course.course_id;
+
+//INNER JOIN all Tables
+
+SELECT * FROM student
+INNER JOIN registration ON student.student_id = registration.student_id
+INNER JOIN section ON registration.section_id = section.section_id
+INNER JOIN course ON section.course_id = course.course_id
+INNER JOIN instructor ON section.instructor_id = instructor.instructor_id;
