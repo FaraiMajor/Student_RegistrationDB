@@ -4,7 +4,7 @@ const pool = require("./db");
 
 app.use(express.json())
 
-//Router for post request to add data to the store table
+//Router for post request to add data to the studenttable
 app.post("/student", async(req, res) => {
     try {
         const { student_id, student_name, student_major } = req.body;
@@ -18,7 +18,7 @@ app.post("/student", async(req, res) => {
 
 })
 
-//Router for get request to get all data from the store table
+//Router for get request to get all data from the student table
 app.get("/student", async(req, res) => {
     try {
         const allStudents = await pool.query(
@@ -33,7 +33,7 @@ app.get("/student", async(req, res) => {
 
 })
 
-//Router for get request to get both the ids and names from the store table
+//Router for get request to get both the ids and names from the student table
 app.get("/student/id&name", async(req, res) => {
     try {
         const allStudent = await pool.query(
